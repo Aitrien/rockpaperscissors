@@ -3,9 +3,61 @@
 <head>
   <title>R P S</title>
   <meta charset="UTF-8"/>
-  <script src="rockpaper.js"></script>
+  <script src="rockpaper.js" defer></script>
+  <style>
+    html {
+      font-family: consolas;
+    }
+
+    h1 {
+      text-align: center;
+      word-spacing: 20px;
+    }
+
+    body {
+      background-color: paleturquoise;
+    }
+
+    #container {
+      display: flex;
+      justify-content: center;
+      width: 500px;
+      height: 50px;
+      margin: 0 auto;
+    }
+
+    .sub-container {
+      text-align: center;
+      font-size: 50px;
+      width: 700px;
+      height: 120px;
+      margin: 0 auto;
+    }
+
+    button {
+      padding: 5px;
+      font-size: 20px;
+      margin: 5px;
+      width: 100px;
+    }
+  </style>
 </head>
 <body>
-    <p>Yo</p>
+  <h1>rock paper scissors</h1>
+
+  <div id="container">
+    <button id="btn1">🧱</button>
+    <button id="btn2">🧻</button>
+    <button id="btn3">✂️</button>
+  </div>
+
+  <div class="sub-container">
+    <p id="output"></p>
+  </div>
+  <div class="sub-container">
+    <p id="score">0</p>
+  </div>
+
+
 </body>
 </html>
